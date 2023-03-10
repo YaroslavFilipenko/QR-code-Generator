@@ -1,0 +1,16 @@
+function generateQR() {
+    document.querySelector('#qr-image').style.display = 'block';
+    let QRtext = document.querySelector('#text').value;
+    if (QRtext.trim().lenght == 0) {
+        document.querySelector('#qr-image .error').innerHTML = 'Please enter your text';
+        document.querySelector('#img').style.display = 'none';
+    } else {
+        document.querySelector('#img').style.display = 'block';
+        document.querySelector('#qr-image .error').innerHTML = '';
+        document.querySelector('#img').src = 'https://api.qrserver.com/v1/create-qr-code/?size=240*240&data=' + QRtext;
+    }
+}
+
+$('button').click(function() {
+    $('input').val('');
+})
