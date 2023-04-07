@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>QR-code Generator</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="text" class="input" autocomplete="off">
+        <label>Enter some text</label>
+        <button type="button" onClick="generateQR()" class="button">Generate new QR-code</button>
+        <div id="qr-image">
+            <span class="error"></span><br/>
+            <img src="" alt="qr-code" id="img">
+        </div>
+    </div>
+    <script src="jQuery(3.6.4)min.js"></script>
+    <script src="script(jQuery).js"></script>
+    <!-- <script src="script(JS).js"></script> -->
+</body>
+</html>
