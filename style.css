@@ -73,3 +73,13 @@ button {
 #qr-image {
     display: none;
 }
+
+@media (max-width: 575.98px) {
+    .container {
+        padding: 25px 15px;
+    }
+
+    .input {
+        width: 250px;
+    }
+}
